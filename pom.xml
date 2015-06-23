@@ -21,8 +21,8 @@
 
     <properties>
         <commons.version>1.6</commons.version>
-        <scm.project.name>${project.name}</scm.project.name>
-        <distribution.project.name>${project.name}</distribution.project.name>
+        <scm.project.name>${project.artifactId}</scm.project.name>
+        <distribution.project.name>${project.artifactId}</distribution.project.name>
     </properties>
 
     <scm>
