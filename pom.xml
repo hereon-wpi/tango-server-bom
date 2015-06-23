@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>hzg.wpn.tango</groupId>
+    <artifactId>server-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <developers>
+        <developer>
+            <id>khokhria</id>
+            <name>Igor Khokhriakov</name>
+            <email>igor.khokhriakov@hzg.de</email>
+            <organization>Helmholtz-Zentrum Geesthacht</organization>
+            <organizationUrl>hzg.de</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <commons.version>1.6</commons.version>
+        <scm.project.name>tango-parent</scm.project.name>
+        <distribution.project.name>${project.name}</distribution.project.name>
+    </properties>
+
+    <scm>
+        <connection>scm:hg:https://bitbucket.org/hzgwpn/${scm.project.name}</connection>
+        <developerConnection>scm:hg:ssh://hg@bitbucket.org/hzgwpn/${scm.project.name}</developerConnection>
+        <url>ssh://hg@bitbucket.org/hzgwpn/${scm.project.name}</url>
+        <tag>${project.version}</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-hzg</id>
+            <url>https://api.bintray.com/maven/hzgde/hzg-wpn-projects/${distribution.project.name}</url>
+        </repository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>hzg.wpn.tango</groupId>
+            <artifactId>server-commons</artifactId>
+            <type>pom</type>
+            <version>${commons.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>standalone</id>
+            <dependencies>
+                <dependency>
+                    <groupId>hzg.wpn.tango</groupId>
+                    <artifactId>server-commons</artifactId>
+                    <type>pom</type>
+                    <version>${commons.version}</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <id>jar-distribution</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly.xml</descriptor>
+                            </descriptors>
+                            <appendAssemblyId>false</appendAssemblyId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray</id>
+            <name>bintray</name>
+            <url>http://dl.bintray.com/hzgde/hzg-wpn-projects</url>
+        </repository>
+    </repositories>
+</project>
