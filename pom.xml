@@ -18,7 +18,7 @@
     </developers>
 
     <properties>
-        <commons.version>1.6</commons.version>
+        <commons.version>1.8</commons.version>
         <scm.project.name>${project.artifactId}</scm.project.name>
         <distribution.project.name>${project.artifactId}</distribution.project.name>
     </properties>
@@ -38,6 +38,18 @@
     </distributionManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>hzg.wpn.tango</groupId>
             <artifactId>server-commons</artifactId>
