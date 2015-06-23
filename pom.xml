@@ -84,6 +84,7 @@
                             <goal>single</goal>
                         </goals>
                         <configuration>
+                            <skipAssembly>true</skipAssembly>
                             <descriptors>
                                 <descriptor>src/main/assembly.xml</descriptor>
                             </descriptors>
