@@ -27,7 +27,7 @@
 
     <scm>
         <connection>scm:hg:https://bitbucket.org/hzgwpn/${scm.project.name}</connection>
-        <developerConnection>${scm.developerConnection.prefix}</developerConnection>
+        <developerConnection>${scm.developerConnection}</developerConnection>
         <url>ssh://hg@bitbucket.org/hzgwpn/${scm.project.name}</url>
         <tag>${project.version}</tag>
     </scm>
