@@ -19,13 +19,14 @@
 
     <properties>
         <commons.version>1.8</commons.version>
+        <scm.developerConnection.prefix>scm:hg:ssh://hg@bitbucket.org/hzgwpn/</scm.developerConnection.prefix>
         <scm.project.name>${project.artifactId}</scm.project.name>
         <distribution.project.name>${project.artifactId}</distribution.project.name>
     </properties>
 
     <scm>
         <connection>scm:hg:https://bitbucket.org/hzgwpn/${scm.project.name}</connection>
-        <developerConnection>scm:hg:ssh://hg@bitbucket.org/hzgwpn/${scm.project.name}</developerConnection>
+        <developerConnection>${scm.developerConnection.prefix}${scm.project.name}</developerConnection>
         <url>ssh://hg@bitbucket.org/hzgwpn/${scm.project.name}</url>
         <tag>${project.version}</tag>
     </scm>
