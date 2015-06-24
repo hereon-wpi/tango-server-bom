@@ -4,7 +4,7 @@
 
     <groupId>hzg.wpn.tango</groupId>
     <artifactId>server-parent</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -28,7 +28,7 @@
         <connection>scm:hg:https://bitbucket.org/hzgwpn/${scm.project.name}</connection>
         <developerConnection>${scm.developerConnection.prefix}${scm.project.name}</developerConnection>
         <url>ssh://hg@bitbucket.org/hzgwpn/${scm.project.name}</url>
-        <tag>${project.version}</tag>
+        <tag>server-parent-1.5</tag>
     </scm>
 
     <distributionManagement>
