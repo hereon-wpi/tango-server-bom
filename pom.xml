@@ -18,7 +18,7 @@
     </developers>
 
     <properties>
-        <commons.version>1.8</commons.version>
+        <commons.version>1.9</commons.version>
         <scm.developerConnection.prefix>scm:hg:ssh://hg@bitbucket.org/hzgwpn/</scm.developerConnection.prefix>
         <scm.project.name>${project.artifactId}</scm.project.name>
         <scm.developerConnection>${scm.developerConnection.prefix}${scm.project.name}</scm.developerConnection>
