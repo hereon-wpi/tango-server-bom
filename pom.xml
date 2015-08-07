@@ -4,7 +4,7 @@
 
     <groupId>hzg.wpn.tango</groupId>
     <artifactId>server-parent</artifactId>
-    <version>1.9-SNAPSHOT</version>
+    <version>9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -18,7 +18,7 @@
     </developers>
 
     <properties>
-        <commons.version>1.10</commons.version>
+        <commons.version>12</commons.version>
         <scm.developerConnection.prefix>scm:hg:ssh://hg@bitbucket.org/hzgwpn/</scm.developerConnection.prefix>
         <scm.project.name>${project.artifactId}</scm.project.name>
         <scm.developerConnection>${scm.developerConnection.prefix}${scm.project.name}</scm.developerConnection>
