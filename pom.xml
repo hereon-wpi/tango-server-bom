@@ -56,23 +56,8 @@
             <artifactId>server-commons</artifactId>
             <type>pom</type>
             <version>RELEASE</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <profiles>
-        <profile>
-            <id>standalone</id>
-            <dependencies>
-                <dependency>
-                    <groupId>hzg.wpn.tango</groupId>
-                    <artifactId>server-commons</artifactId>
-                    <type>pom</type>
-                    <version>RELEASE</version>
-                </dependency>
-            </dependencies>
-        </profile>
-    </profiles>
 
     <build>
         <plugins>
