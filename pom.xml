@@ -52,10 +52,38 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>hzg.wpn.tango</groupId>
-            <artifactId>server-commons</artifactId>
-            <type>pom</type>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-ext</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.tango</groupId>
+            <artifactId>ezTangORB</artifactId>
             <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.tango</groupId>
+            <artifactId>JTangoServer</artifactId>
+            <version>9.0.5.hzg</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.tango</groupId>
+                    <artifactId>TangORB</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-ext</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
