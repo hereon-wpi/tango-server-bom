@@ -4,7 +4,7 @@
 
     <groupId>hzg.wpn.tango</groupId>
     <artifactId>server-parent</artifactId>
-    <version>16</version>
+    <version>17-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <developers>
