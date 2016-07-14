@@ -17,24 +17,10 @@
         </developer>
     </developers>
 
-    <properties>
-        <scm.developerConnection.prefix>scm:hg:ssh://hg@bitbucket.org/hzgwpn/</scm.developerConnection.prefix>
-        <scm.project.name>${project.artifactId}</scm.project.name>
-        <scm.developerConnection>${scm.developerConnection.prefix}${scm.project.name}</scm.developerConnection>
-        <distribution.project.name>${project.artifactId}</distribution.project.name>
-    </properties>
-
-    <scm>
-        <connection>scm:hg:https://bitbucket.org/hzgwpn/${scm.project.name}</connection>
-        <developerConnection>${scm.developerConnection}</developerConnection>
-        <url>ssh://hg@bitbucket.org/hzgwpn/${scm.project.name}</url>
-        <tag>${project.version}</tag>
-    </scm>
-
     <distributionManagement>
         <repository>
             <id>bintray-hzg</id>
-            <url>https://api.bintray.com/maven/hzgde/hzg-wpn-projects/${distribution.project.name};publish=1</url>
+            <url>https://api.bintray.com/maven/hzgde/hzg-wpn-projects/server-parent;publish=1</url>
         </repository>
     </distributionManagement>
 
@@ -91,73 +77,6 @@
             </exclusions>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <inherited>true</inherited>
-                <executions>
-                    <execution>
-                        <id>jar-distribution</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <appendAssemblyId>false</appendAssemblyId>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <archive>
-                                <manifest>
-                                    <mainClass>${mainClass}</mainClass>
-                                </manifest>
-                            </archive>
-                        </configuration>
-                    </execution>
-                </executions>
-                <configuration>
-                    <skipAssembly>true</skipAssembly>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <useReleaseProfile>false</useReleaseProfile>
-                    <releaseProfiles>release</releaseProfiles>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <repositories>
         <repository>
