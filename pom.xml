@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hzg.wpn.tango</groupId>
-    <artifactId>server-parent</artifactId>
-    <version>17-SNAPSHOT</version>
+    <groupId>de.hzg.wpi.tango</groupId>
+    <artifactId>tango-server-bom</artifactId>
+    <version>1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -20,7 +20,7 @@
     <distributionManagement>
         <repository>
             <id>bintray-hzg</id>
-            <url>https://api.bintray.com/maven/hzgde/hzg-wpn-projects/server-parent;publish=1</url>
+            <url>https://api.bintray.com/maven/hzgde/hzg-wpn-projects/tango-server-bom;publish=1</url>
         </repository>
     </distributionManagement>
 
