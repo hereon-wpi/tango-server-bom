@@ -14,5 +14,15 @@ Usage:
         </dependency>
 </dependencies>
 
+<repositories>
+        <repository>
+             <snapshots>
+                 <enabled>false</enabled>
+             </snapshots>
+             <id>bintray-hzgde-hzg-wpn-projects</id>
+             <name>bintray</name>
+             <url>http://dl.bintray.com/hzgde/hzg-wpn-projects</url>
+        </repository>
+</repositories>
 
 ```
