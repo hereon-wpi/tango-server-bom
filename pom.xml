@@ -46,9 +46,9 @@
             <version>RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.tango</groupId>
+            <groupId>org.tango.hzg</groupId>
             <artifactId>JTangoServer</artifactId>
-            <version>9.0.5.hzg</version>
+            <version>RELEASE</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.tango</groupId>
