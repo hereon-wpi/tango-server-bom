@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>3</version>
+    <version>4</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -28,12 +28,12 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.5</version>
+            <version>1.7.6</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-ext</artifactId>
-            <version>1.7.5</version>
+            <version>1.7.6</version>
         </dependency>
         <dependency>
             <groupId>org.tango</groupId>
