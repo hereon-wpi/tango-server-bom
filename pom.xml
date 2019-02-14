@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>UNRELEASED-6</version>
+    <version>6</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -26,16 +26,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.6</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-ext</artifactId>
-            <version>1.7.6</version>
-        </dependency>
-        <dependency>
             <groupId>org.tango</groupId>
             <artifactId>ezTangORB</artifactId>
             <version>2.0.11</version>
@@ -49,16 +39,6 @@
             <groupId>org.tango-controls</groupId>
             <artifactId>JTangoServer</artifactId>
             <version>9.5.10-hzg.5</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-ext</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 
