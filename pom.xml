@@ -48,7 +48,7 @@
         <dependency>
             <groupId>org.tango-controls</groupId>
             <artifactId>JTangoServer</artifactId>
-            <version>9.5.10.hzg</version>
+            <version>9.5.10-hzg.4</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
