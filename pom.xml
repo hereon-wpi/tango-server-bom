@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>UNRELEASED-10</version>
+    <version>10</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -59,7 +59,7 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>22</version>
+                <version>22.0</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
