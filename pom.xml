@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>UNRELEASED-11</version>
+    <version>11</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -32,9 +32,9 @@
                 <version>4.12</version>
             </dependency>
             <dependency>
-                <groupId>commons-lang3</groupId>
+                <groupId> org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.6</version>
+                <version>3.8.1</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -69,7 +69,7 @@
             <dependency>
                 <groupId>org.tango</groupId>
                 <artifactId>ezTangORB</artifactId>
-                <version>2.0.11</version>
+                <version>RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>hzg.wpn</groupId>
@@ -79,7 +79,7 @@
             <dependency>
                 <groupId>org.tango-controls</groupId>
                 <artifactId>JTangoServer</artifactId>
-                <version>9.5.10-hzg.7</version>
+                <version>RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
