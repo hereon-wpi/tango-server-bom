@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>UNRELEASED-14</version>
+    <version>14</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -74,7 +74,7 @@
             <dependency>
                 <groupId>hzg.wpn</groupId>
                 <artifactId>utils</artifactId>
-                <version>RELEASE</version>
+                <version>16</version>
             </dependency>
             <dependency>
                 <groupId>org.tango-controls</groupId>
