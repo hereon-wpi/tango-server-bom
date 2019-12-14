@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>21</version>
+    <version>UNRELEASED-22</version>
     <packaging>pom</packaging>
 
     <developers>
