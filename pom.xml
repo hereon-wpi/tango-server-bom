@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>UNRELEASED-22</version>
+    <version>22</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -67,7 +67,7 @@
                 <version>1.7.5</version>
             </dependency>
             <dependency>
-                <groupId>org.tango</groupId>
+                <groupId>de.hzg.wpi.tango.client.api</groupId>
                 <artifactId>ezTangoAPI</artifactId>
                 <version>3.0.0</version>
             </dependency>
