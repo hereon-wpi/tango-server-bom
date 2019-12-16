@@ -4,7 +4,7 @@
 
     <groupId>de.hzg.wpi.tango</groupId>
     <artifactId>tango-server-bom</artifactId>
-    <version>UNRELEASED-25</version>
+    <version>25</version>
     <packaging>pom</packaging>
 
     <developers>
@@ -79,7 +79,7 @@
             <dependency>
                 <groupId>org.tango-controls</groupId>
                 <artifactId>JTangoServer</artifactId>
-                <version>9.5.18-hzg.6</version>
+                <version>9.5.18-hzg.7</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
